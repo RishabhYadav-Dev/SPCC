@@ -2,7 +2,7 @@
 # Aim:To write a program to implement 1/ACC and LEX conccept using python
 
 
-### Steps to perform or execute 10 exp ###
+### Steps to perform or execute 9 exp ###
 # step1:-first create three file name lexer.py parser.py calculator.py
 # step2:- copy and paste code for seperate three files
 # step3:-then execute only calculator.py by using this command in terminal python calculator.py
