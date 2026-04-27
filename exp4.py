@@ -15,6 +15,15 @@
 # what&#39;s going on.
 # The way the production rules are implemented (derivation) divides parsing into two types :
 # top-down parsing and bottom-up parsing.
+### LL Parsing Algorithm
+# We may stick to deterministic LL(1) for parser explanation, as the size of table grows
+# exponentially with the value of k. Secondly, if a given grammar is not LL(1), then usually, it is
+# not LL(k), for any given k.
+# Given below is an algorithm for LL(1) Parsing:
+# A grammar G is LL(1) if A → α | β are two distinct productions of G:
+# for no terminal, both α and β derive strings beginning with a.
+# at most one of α and β can derive empty string.
+# if β → t, then α does not derive any string beginning with a terminal in FOLLOW(A).
 
 #code
 SUCCESS = True
