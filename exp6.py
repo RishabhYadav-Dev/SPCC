@@ -14,6 +14,16 @@
 # program into intermediate code, which performs efficient generation of machine code further. The intermediate
 # code can be represented in the form of postfix notation, syntax tree, directed acyclic graph, three address codes,
 # Quadruples, and triples.
+### Algorithm:
+# 1. Start.
+# 2. Open source file containing optimized source code in the form of three address code, in read mode.
+# 3. Store the instruction set in assembly language for each corresponding instruction in three address code
+# operation.
+# 4. Read the input file line by line.
+# 5. Replace each line of three address code instruction by corresponding set of assembly language instruction
+# set.
+# 6. Repeat the steps (4) &amp; (5) until the end of file.
+# 7. Stop.
 
 
 #code
