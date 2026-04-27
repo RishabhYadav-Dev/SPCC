@@ -1,19 +1,25 @@
-# TITLE: Design and Implement Intermediate Code generation
-# AIM: Write a program to implement Three address code generation in Python/Java
-# Theory:
-# Code generation is one of the least formalized subjects in compiler construction. The task of the code generation
-# phase of a compiler is, to take as input a given internal form representation of the source program &amp; to produce
-# as output an equivalent sequence of instructions in the language of the object machine. Purpose of this phase is
-# to produce the appropriate code either in assembly or machine language. This phase has parse tree as input, it uses
-# code productions or rules. These productions define the operators we encounter in the parse trees. This phase tries
-# to transform intermediate code into a form from which more efficient target code can be produced. Source
-# Program Front end Analysis activities IC Code Optimization IC Code generator Target program Symbol table
-# Literal table &amp; Other tables
-# Intermediate code can translate the source program into the machine program. Intermediate code is generated
-# because the compiler can’t generate machine code directly in one pass. Therefore, first, it converts the source
-# program into intermediate code, which performs efficient generation of machine code further. The intermediate
-# code can be represented in the form of postfix notation, syntax tree, directed acyclic graph, three address codes,
-# Quadruples, and triples.
+# TITLE: Implementation of Bottom up Parser
+# AIM: Write a Program to implement Shift Reduce Parser in Python/Java
+
+# Theory:Bottom-up Parsers parses the tree from leaves(bottom) to the root(up). A more general
+# form of shift reduce parser is LR parser. It requires some data structures i.e.
+# • An input buffer for storing the input string.
+# • A stack for storing and accessing the production rules.
+# LR parser :
+# LR parser is a bottom-up parser for context-free grammar that is very generally used by computer
+# programming language compiler and other associated tools. LR parser reads their input from left to
+# right and produces a right-most derivation. It is called a Bottom-up parser because it attempts to
+# reduce the top-level grammar productions by building up from the leaves. LR parsers are the most
+# CLR Parser :
+# The CLR parser stands for canonical LR parser.It is a more powerful LR parser.It makes use of
+# lookahead symbols. This method uses a large set of items called LR(1) items.The main difference
+# between LR(0) and LR(1) items is that, in LR(1) items, it is possible to carry more information in a
+# state, which will rule out useless reduction states.This
+# LALR Parser :
+# LALR Parser is lookahead LR parser. It is the most powerful parser which can handle large classes
+# of grammar. The size of CLR parsing table is quite large as compared to other parsing table. LALR
+# reduces the size of this table.LALR works similar to CLR. The only difference is , it combines the
+# similar states of CLR parsing table into one single state.
 
 
 #code
