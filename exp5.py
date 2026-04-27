@@ -20,6 +20,11 @@
 # of grammar. The size of CLR parsing table is quite large as compared to other parsing table. LALR
 # reduces the size of this table.LALR works similar to CLR. The only difference is , it combines the
 # similar states of CLR parsing table into one single state.
+# Steps for constructing the SLR parsing table :
+# • Writing augmented grammar
+# • LR(0) collection of items to be found
+# • Find FOLLOW of LHS of production
+# • Defining 2 functions:goto[list of terminals] and action[list of non-terminals] in the parsing table
 
 
 #code
